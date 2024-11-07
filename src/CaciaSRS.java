@@ -1,81 +1,34 @@
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class CaciaSRS {
     public static void main(String[] args) {
 
-        String nome = "Cacia Rodrigues";
-        String tipo = "FullStack";
-        String nivel = "Junior";
+        introduction();
 
-        Queue<String> competenciasTech = new LinkedList<>();
-        Collections.addAll(competenciasTech, "Java", "C", "React", "JavaScript");
+    }
 
-        Queue<String> softSkills = new LinkedList<>();
+    public static void introduction() {
+
+        String name = "Cacia Rodrigues";
+        String type = "FullStack";
+        String level = "Junior";
+
+        Set<String> techSkills = new HashSet<>();
+        Collections.addAll(techSkills, "Java", "C", "React", "JavaScript");
+
+        Set<String> softSkills = new HashSet<>();
         Collections.addAll(softSkills, "Criatividade", "Persistência", "Atenção ao Detalhe", "Adaptabilidade");
 
-        System.out.printf("Olá, me chamo %s e sou Dev %s %s.\n", nome, tipo, nivel);
+        System.out.printf("Olá, me chamo %s e sou Dev %s %s.\n", name, type, level);
 
         System.out.println("\nLinguagens: \n");
-        for (String competencia : competenciasTech) {
-            System.out.println(competencia);
+        for (String skill : techSkills) {
+            System.out.println(skill);
         }
 
         System.out.println("\nPrincipais SoftSkills: \n");
         for (String skill : softSkills) {
             System.out.println(skill);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }
